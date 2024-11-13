@@ -15,6 +15,7 @@ export default function TelaMemes({ navigation }) {
     { titulo: 'BOOOMMM', som: require('../../assets/sounds/meme7.mp3') },
     { titulo: 'É LORD', som: require('../../assets/sounds/meme8.mp3') },
     { titulo: 'P.DIDDYYYY', som: require('../../assets/sounds/meme9.mp3') },
+    { titulo: 'Emotional Damage', som: require('../../assets/sounds/meme10.mp3') },
   ];
 
   return (
