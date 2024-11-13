@@ -9,6 +9,9 @@ export default function TelaMemes({ navigation }) {
     { titulo: 'Ow ma ga!', som: require('../../assets/sounds/meme1.mp3') },
     { titulo: 'Calma Calabreso', som: require('../../assets/sounds/meme2.mp3') },
     { titulo: 'Gegagedigedagedago', som: require('../../assets/sounds/meme3.mp3') },
+    { titulo: 'Cavalo', som: require('../../assets/sounds/meme4.mp3') },
+    { titulo: 'Lets go gambling', som: require('../../assets/sounds/meme5.mp3') },
+    { titulo: 'aw dangit', som: require('../../assets/sounds/meme6.mp3') },
   ];
 
   return (
