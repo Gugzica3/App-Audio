@@ -62,7 +62,7 @@ export default function TelaLogin({ navigation }) {
       style={styles.container}
     >
       <View style={styles.innerContainer}>
-        <Text style={styles.titulo}>Entretenimento Interativo</Text>
+        <Text style={styles.titulo}>Songu!</Text>
         <TextInput
           style={styles.input}
           placeholder="Email"
@@ -96,7 +96,7 @@ export default function TelaLogin({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000', // Fundo preto
+    backgroundColor: '#000000',
   },
   innerContainer: {
     flex: 1,
@@ -108,20 +108,20 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     textAlign: 'center',
     fontWeight: 'bold',
-    color: '#00FFFF', // Neon Cyan
+    color: '#00FFFF',
     textShadowColor: '#00FFFF',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 10,
   },
   input: {
     height: 50,
-    borderColor: '#00FFFF', // Neon Cyan
+    borderColor: '#00FFFF', 
     borderWidth: 2,
     marginBottom: 20,
     paddingHorizontal: 15,
     borderRadius: 10,
-    backgroundColor: '#1a1a1a', // Cinza muito escuro para contraste
-    color: '#00FFFF', // Neon Cyan
+    backgroundColor: '#1a1a1a', 
+    color: '#00FFFF', 
     fontSize: 16,
     shadowColor: '#00FFFF',
     shadowOffset: { width: 0, height: 0 },
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: 'transparent',
     borderWidth: 2,
-    borderColor: '#FF00FF', // Neon Magenta
+    borderColor: '#FF00FF', 
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
   },
   textoBotao: {
     fontSize: 18,
-    color: '#FF00FF', // Neon Magenta
+    color: '#FF00FF',
     fontWeight: 'bold',
     textShadowColor: '#FF00FF',
     textShadowOffset: { width: 0, height: 0 },
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   },
   cadastroTexto: {
     marginTop: 15,
-    color: '#1E90FF', // Neon Blue
+    color: '#1E90FF', 
     textAlign: 'center',
     fontSize: 16,
     textDecorationLine: 'underline',
