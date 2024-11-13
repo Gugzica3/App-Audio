@@ -12,6 +12,9 @@ export default function TelaMemes({ navigation }) {
     { titulo: 'Cavalo', som: require('../../assets/sounds/meme4.mp3') },
     { titulo: 'Lets go gambling', som: require('../../assets/sounds/meme5.mp3') },
     { titulo: 'aw dangit', som: require('../../assets/sounds/meme6.mp3') },
+    { titulo: 'BOOOMMM', som: require('../../assets/sounds/meme7.mp3') },
+    { titulo: 'É LORD', som: require('../../assets/sounds/meme8.mp3') },
+    { titulo: 'P.DIDDYYYY', som: require('../../assets/sounds/meme9.mp3') },
   ];
 
   return (
