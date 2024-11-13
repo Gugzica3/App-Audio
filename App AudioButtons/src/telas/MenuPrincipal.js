@@ -6,19 +6,28 @@ import { LinearGradient } from 'expo-linear-gradient';
 import useAccelerometer from '../hooks/useAccelerometer';
 
 export default function MenuPrincipal({ navigation }) {
-  const acelerometerData = useAccelerometer(1000);
-  const { x } = acelerometerData;
+  const acelerometerData = useAccelerometer(200); 
+  const { x, y, z } = acelerometerData;
   const [backgroundColor, setBackgroundColor] = useState('#000000');
 
   useEffect(() => {
-    if (x > 1) {
-      setBackgroundColor('#1E90FF'); // Neon Blue
-    } else if (x < -1) {
-      setBackgroundColor('#FF1493'); // Neon Pink
-    } else {
-      setBackgroundColor('#000000'); // Preto
-    }
-  }, [x]);
+    const normalizedX = Math.abs(x / 10);
+    const normalizedY = Math.abs(y / 10);
+    const normalizedZ = Math.abs(z / 10);
+
+    const red = Math.min(255, Math.floor(normalizedZ * 255)) + 20;
+    const green = Math.min(255, Math.floor(normalizedY * 255)) + 20;
+    const blue = Math.min(255, Math.floor(normalizedX * 255)) + 20;
+
+    const newRed = Math.min(255, red);
+    const newGreen = Math.min(255, green);
+    const newBlue = Math.min(255, blue);
+
+    const newColor = `rgb(${newRed}, ${newGreen}, ${newBlue})`;
+
+
+    setBackgroundColor(newColor);
+  }, [x, y, z]);
 
   const handleLogout = () => {
     Alert.alert(
@@ -26,16 +35,11 @@ export default function MenuPrincipal({ navigation }) {
       'Tem certeza que deseja sair?',
       [
         { text: 'Cancelar', style: 'cancel' },
-        { text: 'Sair', onPress: () => {
-            navigation.reset({
-              index: 0,
-              routes: [{ name: 'TelaLogin' }],
-            });
-          }, style: 'destructive' },
+        { text: 'Sair', onPress: () => navigation.reset({ index: 0, routes: [{ name: 'TelaLogin' }] }), style: 'destructive' },
       ]
     );
   };
-  
+
   return (
     <View style={[styles.container, { backgroundColor }]}>
       <Text style={styles.titulo}>Menu Principal</Text>
@@ -57,6 +61,7 @@ export default function MenuPrincipal({ navigation }) {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
