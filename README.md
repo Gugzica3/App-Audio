@@ -25,15 +25,15 @@ Sabe quando você está conversando com um amigo e lembra de algum som, mas não
 Aqui estão algumas capturas de tela do aplicativo para você conferir como ele funciona: 
 
 - **Menu Principal**  
-  ![Menu Principal](imagens/menu_principal.png)
+  ![Menu Principal](imagens/menuPrincipal.jpg)
 
 - **Tela de Memes**  
-  ![Tela de Memes](imagens/tela_memes.png)
+  ![Tela de Memes](imagens/telaMemes.jpg)
 
 - **Tela de Animes**  
-  ![Tela de Animes](imagens/tela_animes.png)
+  ![Tela de Animes](imagens/telaAnimes.jpg)
 
 - **Tela de Músicas**  
-  ![Tela de Músicas](imagens/tela_musicas.png)
+  ![Tela de Músicas](imagens/telaMusicas.jpg)
 
 O aplicativo combina uma interface visual moderna com elementos interativos, como botões animados e sons, criando uma experiência divertida que promove a exploração de diferentes tipos de conteúdo popular em um único lugar. 🚀🤗
